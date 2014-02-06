@@ -1,0 +1,2241 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wh",
+				"width"
+			],
+			[
+				"d",
+				"display"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/etc/hosts",
+			"settings":
+			{
+				"buffer_size": 252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/UPGRADE-2.2.md",
+			"settings":
+			{
+				"buffer_size": 1308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/app/config/parameters.yml",
+			"settings":
+			{
+				"buffer_size": 404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "body {\n    background-color: #FFF;\n    text-align: center;\n}\n#heads \n{\n    background-color: gainsboro;    \n}\n\n* {\nfont-family:sans-serif;\nlist-style:none;\ntext-decoration:none;\nmargin:0;\npadding:0;\n}\n\n#navigation {\n    background-color: #222;\n    padding: 0%;\n    width: 100%;\n    height: 8%;\n    display: block;\n   }\n\n .mi-menu  {\n    left: 0;\n    border-radius: 5px;\n    list-style-type: none;\n    margin: 0 auto; /* si queremos centrarlo */\n    padding: 0;\n    padding-left: 2%;\n    /* la altura y su ancho dependerán de los textos */\n    height: 90%; \n    width: 100%;\n    /* el color de fondo */\n    background: #222;\n    z-index: 4;\n    float: left;\n   /* background: -moz-linear-gradient(#555,#222);\n    background: -webkit-linear-gradient(#555,#222);\n    background: -o-linear-gradient(#555,#222);\n    background: -ms-linear-gradient(#555,#222);\n    background: linear-gradient(#555,#222);*/\n  }\n\n  /* si es necesario, evitamos que Blogger de problemas con los saltos de línea cuando escribimos el HTML */\n  .mi-menu  br { display:none; }\n\n  /* cada item del menu */\n  .mi-menu  li {\n    display: block;\n    float: left; /* la lista se ve horizontal */\n    height: 10%;\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    position: relative;\n    z-index: 5;\n    top: -13%;\n  }\n  .mi-menu li a {\n    border-left: none;\n    border-right: none;\n    color: #EEE;\n    display: block;\n    font-family: Tahoma;\n    font-size: 13px;\n    font-weight: bold;\n    line-height: 28px;\n    padding: 0 14px;\n    margin: 6px 0;\n    text-decoration: none;\n\n    /* animamos el cambio de color de los textos */\n    -webkit-transition: color .2s ease-in-out;\n    -moz-transition: color .2s ease-in-out;\n    -o-transition: color .2s ease-in-out;\n    -ms-transition: color .2s ease-in-out;\n    transition: color .2s ease-in-out;\n  }\n  /* eliminamos los bordes del primer y el último */\n  .mi-menu li:first-child a { border-left: none; }\n  .mi-menu li:last-child a{ border-right: none; }\n  /* efecto hover cambia el color */\n  .mi-menu li:hover > a { color: #0303ff;}\n\n  /* los submenús */\n  .mi-menu ul {\n    border-radius: 0 0 5px 5px;\n    left: 0;\n    margin: 0;\n    opacity: 0; /* no son visibles */\n    position: absolute;\n    top: 40px; /* se ubican debajo del enlace principal */\n    /* el color de fondo */\n    background: #222;\n   \n    z-index: 4;\n    /* animamos su visibildiad */\n    -moz-transition: opacity .25s ease .1s;\n    -webkit-transition: opacity .25s ease .1s;\n    -o-transition: opacity .25s ease .1s;\n    -ms-transition: opacity .25s ease .1s;\n    transition: opacity .25s ease .1s;\n  }\n  /* son visibes al poner el cursor encima */\n  .mi-menu li:hover > ul { opacity: 1; }\n\n   /* cada un ode los items de los submenús */\n  .mi-menu ul li {\n    height: 0; /* no son visibles */\n    overflow: hidden;\n    padding: 0;\n    z-index: 4;\n    /* animamos su visibildiad */\n    -moz-transition: height .25s ease .1s;\n    -webkit-transition: height .25s ease .1s;\n    -o-transition: height .25s ease .1s;\n    -ms-transition: height .25s ease .1s;\n    transition: height .25s ease .1s;\n  }\n  .mi-menu li:hover > ul li {\n    height: 36px; /* los mostramos */\n    overflow: visible;\n    padding: 0;\n  }\n  .mi-menu ul li a {\n    border: none;\n    border-bottom: 1px solid #111;\n    margin: 0;\n    overflow: hidden;\n    /* el ancho dependerá de los textos a utilizar */\n    padding: 5px 20px;\n    width: 100px;\n  }\n  /* el último n otiene un borde */\n  .mi-menu ul li:last-child a { border: none; }\n\n#footer \n{\n    margin: 0;\n    display: block;\n    clear: both;\n    border :#868686 solid 1.5px;\n    box-shadow: #868686 2px;\n}\n\n.section_categoria \n{\n  border: 1px #040404 solid;\n  width: 100%;\n  height: 55%;\n  padding:1%;\n  padding-botton: 0%; \n  margin-bottom: 20px;\n  border-radius: 10px;\n  display: block;\n  background-color: #FFF; \n  box-shadow: 3%;\n border:none;\n   \n}\n\n.title_article \n{\n  display: block;\n  font-size: 0.9em ;\n  border:0%;\n  color:#030303;\n  float: bottom;\n  position: relative;\n  padding: 0%;\n}\n\n.titulo_subcategoria \n{\n  display: block;\n  text-align: center;\n  padding: 1 %;\n  color:#020;\n}\n\n.descripcion_producto \n{\n  font-size: 0.7em;\n  display:block;\n  color:#020202;\n  height: 5%;\n  position: relative;\n}\n#logo \n{\n  display: block;\n  width: 15%;\n  height: 15%;\n  padding-top: 1%;\n  padding-left:3%;\n\n}\n.div_logo \n{\n  display: block;\n  padding-left: 3%;\n  width: 100%;\n}\n\n#p_linea \n{\n  padding-left: 3%;\n}\n\n.linea\n {\n  padding-bottom:2%;\n  size:3px;\n  color:#080808;\n\n}\n\n\n/*para el footer de abajo */\n\n#footer_abajo\n{\n  background-color: #999;\n  border-top: #444 1px solid;\n  display: table;\n  padding: 2%;\n  width: 100%;\n  height: 10%;\n}\n\n#footer_contenedor \n{\n  display: table-row;\n}\n\n#text_footer \n{\n  display: table-cell;\n  padding-left: 5%;\n  padding-top: 0%;\n}\n\n#span_horario\n{\n  color:#101010;\n  font-size: 15px;\n  font-weight: 5px;\n  display: inline-table;\n\n}\n\n#horario_contenido\n{\n  color:#303030;\n  display: inline-table;\n   font-size:10px;\n    font-weight: 3px;\n}\n\n#span_direccion\n{\n  color:#303030;\n  font-size: 15px;\n  font-weight: 5px;\n  display: inline-table;\n\n}\n\n  #direccion_contenido\n  {\n    color:#202020;\n    font-size:10px;\n    font-weight: 3px;\n    display: inline-table;\n  }\n\n#logo_footer\n{\n  display: table-column;\n  float:left;\n}\n\n#img_maps\n{\n  display: table-column;\n  float:right;\n}\n\n.contenedor_general\n{\n  text-align: center;\n  position: absolute; \n  position: relative;\n}",
+			"file": "/home/jairo/.cache/.fr-N6H73q/css/base.css",
+			"file_size": 5435,
+			"file_write_time": 1379793350000000,
+			"settings":
+			{
+				"buffer_size": 5428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/web/css/home.css",
+			"settings":
+			{
+				"buffer_size": 2161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Categoria.php",
+			"settings":
+			{
+				"buffer_size": 2737,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/views/Home/home.html.twig",
+			"settings":
+			{
+				"buffer_size": 3223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\n#section_banner \n{\n  width:  939px;\n  height: 500px;\n  display: block;\n  position: relative;\n  padding: 2% 2% 0% 2%;\n  left: 14%;\n\n}\n#slider{\n  width:  100%;\n  height: 50%;\n  display: table;\n  padding-right:0%;\n  vertical-align: center;\n  padding: 2% 2% 0% 2%;\n\n}\n\n.div_img_banner\n{\n  text-align: center;\n  width: 100;\n  height: 100;\n  display: table-row;\n}\n\n\n.img_banner {\n  z-index: 3;\n  padding: 2%;\n  display: table-cell;\n  width: 85%;\n  height: 85 %;\n  -webkit-border-radius: 5%;\n  -moz-border-radius: 5%;\n  border-radius: 5%;\n  padding-left: 5%;\n  \n\n}\n\n.section_imagen \n{\n  float:right;\n  width: 50%;\n  height: 50%;\n\n}\n/* = section_subcategoria*/\n.a_subcategoria \n{\n  display: table-row; \n  width: 80%;\n  height: 10%;\n  padding-left: 4%;\n}\n\n/*este es el que tiene que dividir hacia la derecha*/\n.img_producto\n{\n  width: 100%;\n  height: 100%;\n  float: right;\n  padding: 0%;\n  -webkit-border-radius: 10px;\n  -moz-border-radius: 10px;\n  border-radius: 10px;\n  \n}\n\n.parrafo_section\n{\n  float:bottom;\n  width: 100%;\n  height: 100%;\n}\n\n\n   \n#section_contenedor \n{\n  text-align: center;\n  display: table;\n  width: 100%;\n  \n\n}\n\n\n/*este es el que da a la derecha*/\n.aside_article\n{\n  display: table-cell;\n  width: 30%;\n  float:left;\n}\nmonit",
+			"file": "/home/jairo/Descargas/css/home.css",
+			"file_size": 1677,
+			"file_write_time": 1379799214000000,
+			"settings":
+			{
+				"buffer_size": 1238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace Abertura\\adminBundle\\Entity;\n\nuse Doctrine\\ORM\\Mapping as ORM;\nuse Symfony\\Component\\Validator\\Constraints as Assert;\n/**\n * Image\n *\n * @ORM\\Table(name=\"image\")\n * @ORM\\Entity\n */\nclass Image\n{\n    /**\n     * @var integer\n     *\n     * @ORM\\Column(name=\"id\", type=\"integer\", nullable=false)\n     * @ORM\\Id\n     * @ORM\\GeneratedValue(strategy=\"IDENTITY\")\n     */\n    private $id;\n    /**\n    * @Assert\\File(maxSize=\"6000000\")\n    */\n    private $file;\n    //\n    /**\n     * @var string\n     *\n     * @ORM\\Column(name=\"comentario\", type=\"string\", length=45, nullable=true)\n     */\n    private $comentario;\n\n    /**\n     * @var string\n     *\n     * @ORM\\Column(name=\"pie\", type=\"string\", length=45, nullable=true)\n     */\n    private $pie;\n\n    /**\n     * @var string\n     *\n     * @ORM\\Column(name=\"ruta\", type=\"string\", length=255, nullable=true)\n     */\n    private $ruta;\n\n    /**\n     * @var string\n     *\n     * @ORM\\Column(name=\"nombre\", type=\"string\", length=255, nullable=false)\n     */\n    private $nombre;\n    \n    \n    \n    public function __toString() {\n        return $this->getRuta();\n    }\n    \n    public function getAbsolutePath()\n    {\n        return null === $this->ruta ? null : $this->getUploadRootDir().'/'.$this->ruta;\n    }\n    public function getWebPath()\n    {\n        return null === $this->ruta ? null : $this->getUploadDir().'/'.$this->ruta;\n    }\n    protected function getUploadRootDir()\n            {\n    // la ruta absoluta al directorio dónde se deben guardar los documentos cargados\n        return __DIR__.'/../../../../web/'.$this->getUploadDir();\n    }\n    protected function getUploadDir()\n    {\n    // se libra del __DIR__ para no desviarse al mostrar ‘doc/image‘ en la vista.\n        return 'cargas/documentos';\n    }\n\n\n\n    /**\n     * Get id\n     *\n     * @return integer \n     */\n    public function getId()\n    {\n        return $this->id;\n    }\n  \n    public function setFile($file)\n    {\n        $this->file = $file;\n    \n        return $this;\n    }\n\n\n    public function getFile()\n    {\n        return $this->file;\n    }\n    /**\n     * Set comentario\n     *\n     * @param string $comentario\n     * @return Image\n     */\n    public function setComentario($comentario)\n    {\n        $this->comentario = $comentario;\n    \n        return $this;\n    }\n\n    /**\n     * Get comentario\n     *\n     * @return string \n     */\n    public function getComentario()\n    {\n        return $this->comentario;\n    }\n\n    /**\n     * Set pie\n     *\n     * @param string $pie\n     * @return Image\n     */\n    public function setPie($pie)\n    {\n        $this->pie = $pie;\n    \n        return $this;\n    }\n\n    /**\n     * Get pie\n     *\n     * @return string \n     */\n    public function getPie()\n    {\n        return $this->pie;\n    }\n\n    /**\n     * Set ruta\n     *\n     * @param string $ruta\n     * @return Image\n     */\n    public function setRuta($ruta)\n    {\n        $this->ruta = $ruta;\n    \n        return $this;\n    }\n\n    /**\n     * Get ruta\n     *\n     * @return string \n     */\n    public function getRuta()\n    {\n        return $this->ruta;\n    }\n\n    /**\n     * Set nombre\n     *\n     * @param string $nombre\n     * @return Image\n     */\n    public function setNombre($nombre)\n    {\n        $this->nombre = $nombre;\n    \n        return $this;\n    }\n\n    /**\n     * Get nombre\n     *\n     * @return string \n     */\n    public function getNombre()\n    {\n        return $this->nombre;\n    }\n    public function upload()\n    {\n        // la propiedad ’file’ puede estar vacía si el campo no es obligatorio\n        if (null === $this->file) {\n        return;\n        }\n        // aquí utilizamos el nombre de archivo original pero lo deberías\n        // desinfectar por lo menos para evitar cualquier problema de seguridad\n        // ’move’ toma el directorio y nombre de archivo destino al cual trasladarlo\n        $this->file->move($this->getUploadRootDir(), $this->file->getClientOriginalName());\n        // fija la propiedad ’path’ al nombre de archivo donde se guardó el archivo\n        $this->setRuta($this->file->getClientOriginalName());\n        // limpia la propiedad ’file’ ya que no la necesitas más\n        $this->file = null;\n    }\n}",
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Image.php",
+			"file_size": 4219,
+			"file_write_time": 1377992253000000,
+			"settings":
+			{
+				"buffer_size": 4193,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Entity/Post.php",
+			"settings":
+			{
+				"buffer_size": 3106,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Subcategoria.php",
+			"settings":
+			{
+				"buffer_size": 3379,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Entity/Tag.php",
+			"settings":
+			{
+				"buffer_size": 1598,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/parameters.yml",
+			"settings":
+			{
+				"buffer_size": 394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Form/PostType.php",
+			"settings":
+			{
+				"buffer_size": 926,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace gse\\BlogBundle\\Form;\n\nuse Symfony\\Component\\Form\\AbstractType;\nuse Symfony\\Component\\Form\\FormBuilderInterface;\nuse Symfony\\Component\\OptionsResolver\\OptionsResolverInterface;\n\nclass TagType extends AbstractType\n{\n        /**\n     * @param FormBuilderInterface $builder\n     * @param array $options\n     */\n    public function buildForm(FormBuilderInterface $builder, array $options)\n    {\n        $builder\n            ->add('nombre');\n            ->add('post_id');\n    }\n    \n    /**\n     * @param OptionsResolverInterface $resolver\n     */\n    public function setDefaultOptions(OptionsResolverInterface $resolver)\n    {\n        $resolver->setDefaults(array(\n            'data_class' => 'gse\\BlogBundle\\Entity\\Tag'\n        ));\n    }\n\n    /**\n     * @return string\n     */\n    public function getName()\n    {\n        return 'gse_blogbundle_tag';\n    }\n}\n",
+			"file": "src/gse/BlogBundle/Form/TagType.php",
+			"file_size": 850,
+			"file_write_time": 1391430787000000,
+			"settings":
+			{
+				"buffer_size": 871,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 343,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/config/routing/post.yml",
+			"settings":
+			{
+				"buffer_size": 768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/config/routing/tag.yml",
+			"settings":
+			{
+				"buffer_size": 754,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/views/Post/edit.html.twig",
+			"settings":
+			{
+				"buffer_size": 296,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/views/Post/index.html.twig",
+			"settings":
+			{
+				"buffer_size": 1240,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace gse\\BlogBundle\\Controller;\n\nuse Symfony\\Component\\HttpFoundation\\Request;\nuse Symfony\\Bundle\\FrameworkBundle\\Controller\\Controller;\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Method;\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Route;\nuse Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\Template;\nuse gse\\BlogBundle\\Entity\\Post;\nuse gse\\BlogBundle\\Form\\PostType;\n\n/**\n * Post controller.\n *\n * @Route(\"/post\")\n */\nclass PostController extends Controller\n{\n\n    /**\n     * Lists all Post entities.\n     *\n     * @Route(\"/\", name=\"post\")\n     * @Method(\"GET\")\n     * @Template()\n     */\n    public function indexAction()\n    {\n        $em = $this->getDoctrine()->getManager();\n\n        $entities = $em->getRepository('gseBlogBundle:Post')->findAll();\n\n        return array(\n            'entities' => $entities,\n        );\n    }\n    /**\n     * Creates a new Post entity.\n     *\n     * @Route(\"/\", name=\"post_create\")\n     * @Method(\"POST\")\n     * @Template(\"gseBlogBundle:Post:new.html.twig\")\n     */\n    public function createAction(Request $request)\n    {\n        $entity = new Post();\n        $form = $this->createCreateForm($entity);\n        $form->handleRequest($request);\n\n        if ($form->isValid()) {\n            $em = $this->getDoctrine()->getManager();\n            $em->persist($entity);\n            $em->flush();\n\n            return $this->redirect($this->generateUrl('post_show', array('id' => $entity->getId())));\n        }\n\n        return array(\n            'entity' => $entity,\n            'form'   => $form->createView(),\n        );\n    }\n\n    /**\n    * Creates a form to create a Post entity.\n    *\n    * @param Post $entity The entity\n    *\n    * @return \\Symfony\\Component\\Form\\Form The form\n    */\n    private function createCreateForm(Post $entity)\n    {\n        $form = $this->createForm(new PostType(), $entity, array(\n            'action' => $this->generateUrl('post_create'),\n            'method' => 'POST',\n        ));\n\n        $form->add('submit', 'submit', array('label' => 'Create'));\n\n        return $form;\n    }\n\n    /**\n     * Displays a form to create a new Post entity.\n     *\n     * @Route(\"/new\", name=\"post_new\")\n     * @Method(\"GET\")\n     * @Template()\n     */\n    public function newAction()\n    {\n        $entity = new Post();\n        $form   = $this->createCreateForm($entity);\n        return array(\n            'entity' => $entity,\n            'form'   => $form->createView(),\n        );\n    }\n\n    /**\n     * Finds and displays a Post entity.\n     *\n     * @Route(\"/{id}\", name=\"post_show\")\n     * @Method(\"GET\")\n     * @Template()\n     */\n    public function showAction($id)\n    {\n        $em = $this->getDoctrine()->getManager();\n\n        $entity = $em->getRepository('gseBlogBundle:Post')->find($id);\n\n        if (!$entity) {\n            throw $this->createNotFoundException('Unable to find Post entity.');\n        }\n\n        $deleteForm = $this->createDeleteForm($id);\n\n        return array(\n            'entity'      => $entity,\n            'delete_form' => $deleteForm->createView(),\n        );\n    }\n\n    /**\n     * Displays a form to edit an existing Post entity.\n     *\n     * @Route(\"/{id}/edit\", name=\"post_edit\")\n     * @Method(\"GET\")\n     * @Template()\n     */\n    public function editAction($id)\n    {\n        $em = $this->getDoctrine()->getManager();\n\n        $entity = $em->getRepository('gseBlogBundle:Post')->find($id);\n\n        if (!$entity) {\n            throw $this->createNotFoundException('Unable to find Post entity.');\n        }\n\n        $editForm = $this->createEditForm($entity);\n        $deleteForm = $this->createDeleteForm($id);\n\n        return array(\n            'entity'      => $entity,\n            'edit_form'   => $editForm->createView(),\n            'delete_form' => $deleteForm->createView(),\n        );\n    }\n\n    /**\n    * Creates a form to edit a Post entity.\n    *\n    * @param Post $entity The entity\n    *\n    * @return \\Symfony\\Component\\Form\\Form The form\n    */\n    private function createEditForm(Post $entity)\n    {\n        $form = $this->createForm(new PostType(), $entity, array(\n            'action' => $this->generateUrl('post_update', array('id' => $entity->getId())),\n            'method' => 'PUT',\n        ));\n\n        $form->add('submit', 'submit', array('label' => 'Update'));\n\n        return $form;\n    }\n    /**\n     * Edits an existing Post entity.\n     *\n     * @Route(\"/{id}\", name=\"post_update\")\n     * @Method(\"PUT\")\n     * @Template(\"gseBlogBundle:Post:edit.html.twig\")\n     */\n    public function updateAction(Request $request, $id)\n    {\n        $em = $this->getDoctrine()->getManager();\n\n        $entity = $em->getRepository('gseBlogBundle:Post')->find($id);\n\n        if (!$entity) {\n            throw $this->createNotFoundException('Unable to find Post entity.');\n        }\n\n        $deleteForm = $this->createDeleteForm($id);\n        $editForm = $this->createEditForm($entity);\n        $editForm->handleRequest($request);\n\n        if ($editForm->isValid()) {\n            $em->flush();\n\n            return $this->redirect($this->generateUrl('post_edit', array('id' => $id)));\n        }\n\n        return array(\n            'entity'      => $entity,\n            'edit_form'   => $editForm->createView(),\n            'delete_form' => $deleteForm->createView(),\n        );\n    }\n    /**\n     * Deletes a Post entity.\n     *\n     * @Route(\"/{id}\", name=\"post_delete\")\n     * @Method(\"DELETE\")\n     */\n    public function deleteAction(Request $request, $id)\n    {\n        $form = $this->createDeleteForm($id);\n        $form->handleRequest($request);\n\n        if ($form->isValid()) {\n            $em = $this->getDoctrine()->getManager();\n            $entity = $em->getRepository('gseBlogBundle:Post')->find($id);\n\n            if (!$entity) {\n                throw $this->createNotFoundException('Unable to find Post entity.');\n            }\n\n            $em->remove($entity);\n            $em->flush();\n        }\n\n        return $this->redirect($this->generateUrl('post'));\n    }\n\n    /**\n     * Creates a form to delete a Post entity by id.\n     *\n     * @param mixed $id The entity id\n     *\n     * @return \\Symfony\\Component\\Form\\Form The form\n     */\n    private function createDeleteForm($id)\n    {\n        return $this->createFormBuilder()\n            ->setAction($this->generateUrl('post_delete', array('id' => $id)))\n            ->setMethod('DELETE')\n            ->add('submit', 'submit', array('label' => 'Delete'))\n            ->getForm()\n        ;\n    }\n}\n",
+			"file": "src/gse/BlogBundle/Controller/PostController.php",
+			"file_size": 6506,
+			"file_write_time": 1391446152000000,
+			"settings":
+			{
+				"buffer_size": 6505,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 1670,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/app/Resources/views/base.html.twig",
+			"settings":
+			{
+				"buffer_size": 391,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config_dev.yml",
+			"settings":
+			{
+				"buffer_size": 865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config_prod.yml",
+			"settings":
+			{
+				"buffer_size": 535,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/config/services.yml",
+			"settings":
+			{
+				"buffer_size": 201,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/DataFixture/ORM/Tag.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Controller/DefaultController.php",
+			"settings":
+			{
+				"buffer_size": 297,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/config.yml",
+			"settings":
+			{
+				"buffer_size": 1963,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/config/routing/producto.yml",
+			"settings":
+			{
+				"buffer_size": 980,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/config/routing/home.yml",
+			"settings":
+			{
+				"buffer_size": 186,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Controller/TagController.php",
+			"settings":
+			{
+				"buffer_size": 6459,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/gseBlogBundle.php",
+			"settings":
+			{
+				"buffer_size": 122,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 87,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Controller/CategoriaController.php",
+			"settings":
+			{
+				"buffer_size": 5689,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/views/Post/new.html.twig",
+			"settings":
+			{
+				"buffer_size": 258,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Form/SubcategoriaType.php",
+			"settings":
+			{
+				"buffer_size": 803,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Form/CategoriaType.php",
+			"settings":
+			{
+				"buffer_size": 789,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/config/doctrine/gse.BlogBundle.Entity.Post.orm.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/gse/BlogBundle/Resources/config/doctrine/gse.BlogBundle.Entity.Tag.orm.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Controller/SubcategoriaController.php",
+			"settings":
+			{
+				"buffer_size": 6125,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/app/SymfonyRequirements.php",
+			"settings":
+			{
+				"buffer_size": 28223,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/gse/blog/src/gse/BlogBundle/Entity/Tag.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/gse/blog/src/gse/BlogBundle/Resources/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "gse_blog:\n    resource: \"@gseBlogBundle/Controller/\"\n    type:     annotation\n    prefix:   /\n\ngse_blog:\n    resource: \"@gseBlogBundle/Resources/config/routing.yml\"\n    prefix:   /zz    ",
+			"file": "/var/www/gse/blog/app/config/routing.yml",
+			"file_size": 181,
+			"file_write_time": 1391454405000000,
+			"settings":
+			{
+				"buffer_size": 186,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 2150,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/AppKernel.php",
+			"settings":
+			{
+				"buffer_size": 1469,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nnamespace gse\\BlogBundle\\DataFixtures\\ORM;\n\nuse Doctrine\\Common\\DataFixtures\\FixtureInterface;\nuse Doctrine\\Common\\Persistence\\ObjectManager;\nuse gse\\BlogBundle\\Entity\\Tag;\nuse gse\\BlogBundle\\Entity\\Post;\n\n\nclass LoadPostData extends AbstrasctFixture implements OrderedFixtureInterface\n{\n    public function load(ObjectManager $manager)\n    {\n        for ($i=0; $<50; $i++) {\n            $post = new Post();\n\n            $post->setNombre('post '.$i);\n            $post->addTag()\n            \n            $manager->persist($tag);\n        }\n\n        $manager->flush();\n    }\n}\n\n",
+			"file": "src/gse/BlogBundle/DataFixture/ORM/Post.php",
+			"file_size": 584,
+			"file_write_time": 1391476882000000,
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/autoload.php",
+			"settings":
+			{
+				"buffer_size": 267,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/DataFixtures/ORM/Image.php",
+			"settings":
+			{
+				"buffer_size": 7749,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jairo/workspace/aberturas_mg/app/config/parameters.yml.dist",
+		"/var/www/g-se/src/gse/BlogBundle/Entity/Tag.php",
+		"/var/www/g-se/app/autoload.php",
+		"/home/jairo/workspace/aberturas_mg/app/autoload.php",
+		"/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Form/SubcategoriaType.php",
+		"/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Subcategoria.php",
+		"/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Categoria.php",
+		"/var/www/g-se/app/config/routing.yml",
+		"/home/jairo/workspace/aberturas_mg/app/config/routing.yml",
+		"/var/www/g-se/app/config/routing_dev.yml",
+		"/var/www/g-se/src/gse/BlogBundle/DependencyInjection/Configuration.php",
+		"/var/www/g-se/src/gse/BlogBundle/Resources/doc/index.rst"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"));\n",
+			"d",
+			"loader",
+			"';\n",
+			"();\n",
+			"\n",
+			"post_id');\n    ",
+			"');\n",
+			"gse\\BlogBundle\\Entity\\gse\\BlogBundle\\Entity\\Pos",
+			"\n    ",
+			"post:",
+			"categoria",
+			"AberturaadminBundle",
+			"subca",
+			"slider",
+			"section_cate",
+			"img_producto",
+			"3306"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Post:",
+			"post",
+			"tag",
+			"gseBlogBundle"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/etc/hosts",
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/jairo/workspace/aberturas_mg/UPGRADE-2.2.md",
+					"settings":
+					{
+						"buffer_size": 1308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/jairo/workspace/aberturas_mg/app/config/parameters.yml",
+					"settings":
+					{
+						"buffer_size": 404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/jairo/.cache/.fr-N6H73q/css/base.css",
+					"settings":
+					{
+						"buffer_size": 5428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4232,
+								4232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2890.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/jairo/workspace/aberturas_mg/web/css/home.css",
+					"settings":
+					{
+						"buffer_size": 2161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2161,
+								2161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2481.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Categoria.php",
+					"settings":
+					{
+						"buffer_size": 2737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1467,
+								1467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1168.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/views/Home/home.html.twig",
+					"settings":
+					{
+						"buffer_size": 3223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2458,
+								2458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 604.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/jairo/Descargas/css/home.css",
+					"settings":
+					{
+						"buffer_size": 1238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1238,
+								1238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1683.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Image.php",
+					"settings":
+					{
+						"buffer_size": 4193,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/gse/BlogBundle/Entity/Post.php",
+					"settings":
+					{
+						"buffer_size": 3106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2274,
+								2274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2337.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Entity/Subcategoria.php",
+					"settings":
+					{
+						"buffer_size": 3379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3092,
+								3092
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2188.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/gse/BlogBundle/Entity/Tag.php",
+					"settings":
+					{
+						"buffer_size": 1598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1519,
+								1519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1419.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/config/parameters.yml",
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/gse/BlogBundle/Form/PostType.php",
+					"settings":
+					{
+						"buffer_size": 926,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							],
+							[
+								324,
+								324
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "src/gse/BlogBundle/Form/TagType.php",
+					"settings":
+					{
+						"buffer_size": 871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 136.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/gse/BlogBundle/Resources/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/gse/BlogBundle/Resources/config/routing/post.yml",
+					"settings":
+					{
+						"buffer_size": 768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "src/gse/BlogBundle/Resources/config/routing/tag.yml",
+					"settings":
+					{
+						"buffer_size": 754,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								698,
+								698
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 267.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "src/gse/BlogBundle/Resources/views/Post/edit.html.twig",
+					"settings":
+					{
+						"buffer_size": 296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "src/gse/BlogBundle/Resources/views/Post/index.html.twig",
+					"settings":
+					{
+						"buffer_size": 1240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "src/gse/BlogBundle/Controller/PostController.php",
+					"settings":
+					{
+						"buffer_size": 6505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5133,
+								5133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2868.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "/home/jairo/workspace/aberturas_mg/app/config/config.yml",
+					"settings":
+					{
+						"buffer_size": 1670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "/home/jairo/workspace/aberturas_mg/app/Resources/views/base.html.twig",
+					"settings":
+					{
+						"buffer_size": 391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "app/config/config_dev.yml",
+					"settings":
+					{
+						"buffer_size": 865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "app/config/config_prod.yml",
+					"settings":
+					{
+						"buffer_size": 535,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "src/gse/BlogBundle/Resources/config/services.yml",
+					"settings":
+					{
+						"buffer_size": 201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/var/www/g-se/src/gse/BlogBundle/DataFixture",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "src/gse/BlogBundle/DataFixture/ORM/Tag.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "src/gse/BlogBundle/Controller/DefaultController.php",
+					"settings":
+					{
+						"buffer_size": 297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "app/config/config.yml",
+					"settings":
+					{
+						"buffer_size": 1963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/config/routing/producto.yml",
+					"settings":
+					{
+						"buffer_size": 980,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/config/routing/home.yml",
+					"settings":
+					{
+						"buffer_size": 186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "src/gse/BlogBundle/Controller/TagController.php",
+					"settings":
+					{
+						"buffer_size": 6459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 322.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 33,
+					"file": "src/gse/BlogBundle/gseBlogBundle.php",
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "app/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 87,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 35,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Controller/CategoriaController.php",
+					"settings":
+					{
+						"buffer_size": 5689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								920
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1847.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 36,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Resources/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 8,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 37,
+					"file": "src/gse/BlogBundle/Resources/views/Post/new.html.twig",
+					"settings":
+					{
+						"buffer_size": 258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								176,
+								176
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 38,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Form/SubcategoriaType.php",
+					"settings":
+					{
+						"buffer_size": 803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								691,
+								691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 181.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 39,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Form/CategoriaType.php",
+					"settings":
+					{
+						"buffer_size": 789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 40,
+					"file": "src/gse/BlogBundle/Resources/config/doctrine/gse.BlogBundle.Entity.Post.orm.yml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 41,
+					"file": "src/gse/BlogBundle/Resources/config/doctrine/gse.BlogBundle.Entity.Tag.orm.yml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 42,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/Controller/SubcategoriaController.php",
+					"settings":
+					{
+						"buffer_size": 6125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 17.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 43,
+					"file": "/home/jairo/workspace/aberturas_mg/app/SymfonyRequirements.php",
+					"settings":
+					{
+						"buffer_size": 28223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 44,
+					"file": "/var/www/gse/blog/src/gse/BlogBundle/Entity/Tag.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1202.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 45,
+					"file": "/var/www/gse/blog/src/gse/BlogBundle/Resources/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 46,
+					"file": "/var/www/gse/blog/app/config/routing.yml",
+					"settings":
+					{
+						"buffer_size": 186,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 47,
+					"file": "composer.json",
+					"settings":
+					{
+						"buffer_size": 2150,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 85.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 48,
+					"file": "app/AppKernel.php",
+					"settings":
+					{
+						"buffer_size": 1469,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								851,
+								851
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 65.0,
+						"translation.y": 229.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 49,
+					"file": "src/gse/BlogBundle/DataFixture/ORM/Post.php",
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 247.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 50,
+					"file": "app/autoload.php",
+					"settings":
+					{
+						"buffer_size": 267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/DataFixtures/ORM/Image.php",
+					"settings":
+					{
+						"buffer_size": 7749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7747,
+								7747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2252.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 49,
+					"file": "src/gse/BlogBundle/DataFixture/ORM/Post.php",
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 28.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "src/gse/BlogBundle/DataFixture/ORM/Tag.php",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 51,
+					"file": "/home/jairo/workspace/aberturas_mg/src/Abertura/adminBundle/DataFixtures/ORM/Image.php",
+					"settings":
+					{
+						"buffer_size": 7749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								48,
+								48
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/config/parameters.yml",
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.093808630394,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"para",
+				"g-se/app/config/parameters.yml"
+			],
+			[
+				"image",
+				"aberturas_mg/src/Abertura/adminBundle/DataFixtures/ORM/Image.php"
+			],
+			[
+				"post.",
+				"g-se/src/gse/BlogBundle/DataFixture/ORM/Post.php"
+			],
+			[
+				"tag",
+				"g-se/src/gse/BlogBundle/Entity/Tag.php"
+			],
+			[
+				"a",
+				"g-se/app/autoload.php"
+			],
+			[
+				"auto",
+				"aberturas_mg/app/autoload.php"
+			],
+			[
+				"tag.",
+				"g-se/src/gse/BlogBundle/DataFixture/ORM/Tag.php"
+			],
+			[
+				"com",
+				"g-se/composer.json"
+			],
+			[
+				"appke",
+				"g-se/app/AppKernel.php"
+			],
+			[
+				"comp",
+				"g-se/composer.json"
+			],
+			[
+				"",
+				"g-se/src/gse/BlogBundle/Entity/Post.php"
+			],
+			[
+				"sucategoriaty",
+				"aberturas_mg/src/Abertura/adminBundle/Form/SubcategoriaType.php"
+			],
+			[
+				"postty",
+				"g-se/src/gse/BlogBundle/Form/PostType.php"
+			],
+			[
+				"sub",
+				"aberturas_mg/src/Abertura/adminBundle/Entity/Subcategoria.php"
+			],
+			[
+				"post",
+				"g-se/src/gse/BlogBundle/Entity/Post.php"
+			],
+			[
+				"categ",
+				"aberturas_mg/src/Abertura/adminBundle/Entity/Categoria.php"
+			],
+			[
+				"routing",
+				"g-se/app/config/routing_dev.yml"
+			],
+			[
+				"home",
+				"src/Abertura/adminBundle/Resources/views/Home/home.html.twig"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true
+}

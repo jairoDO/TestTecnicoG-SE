@@ -1,0 +1,4 @@
+gse_blog:
+    resource: "@gseBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+

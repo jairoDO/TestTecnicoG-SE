@@ -1,0 +1,28 @@
+<?php
+
+namespace gse\BlogBundle\DataFixtures\ORM;
+
+use Doctrine\Common\DataFixtures\FixtureInterface;
+use Doctrine\Common\Persistence\ObjectManager;
+use gse\BlogBundle\Entity\Tag;
+use gse\BlogBundle\Entity\Post;
+
+
+class LoadPostData extends AbstractFixture implements OrderedFixtureInterface
+{
+    public function load(ObjectManager $manager)
+    {
+        for ($i=0; $<50; $i++) {
+            $post = new Post();
+
+            $post->setNombre('post '.$i);
+            $post->addTag()
+            
+            $manager->persist($tag);
+        }
+
+        $manager->flush();
+    }
+}
+
+?>

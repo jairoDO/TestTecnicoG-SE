@@ -1,0 +1,12 @@
+gse:
+    pattern:  /
+    defaults: { _controller: "gseBlogBundle:PostGSE:index" }
+
+gse_listar:
+    pattern:  /listar
+    defaults: { _controller: "gseBlogBundle:PostGSE:listar" }
+
+
+gse_new:
+    pattern:  /new
+    defaults: { _controller: "gseBlogBundle:PostGSE:new" }

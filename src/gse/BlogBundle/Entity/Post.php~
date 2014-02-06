@@ -1,0 +1,59 @@
+<?php
+
+namespace gse\BlogBundle\Entity;
+use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Post
+ *
+ * @ORM\Table(name="post")
+ * @ORM\Entity(repositoryClass="gse\BlogBundle\Entity\PostRepository")
+ */
+class Post
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @Assert\NotBlank()
+     * @ORM\Column(name="titulo", type="string", length=45, nullable=false)
+     */
+    private $titulo;
+
+    /**
+     * @var string
+     *
+     * @Assert\NotBlank()
+     * @ORM\Column(name="cuerpo", type="text", nullable=false)
+     */
+    private $cuerpo;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="url_img", type="string", length=45, nullable=false)
+     */
+    private $urlImg;
+
+
+    /**
+     * @var \Tag
+     *
+     * @ORM\ManyToOne(targetEntity="Tag")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="tag_ids", referencedColumnName="id")
+     * })
+     */
+    private $tag_ids;
+
+
+}

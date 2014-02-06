@@ -1,0 +1,30 @@
+posttag:
+    pattern:  /
+    defaults: { _controller: "gseBlogBundle:PostTag:index" }
+
+posttag_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "gseBlogBundle:PostTag:show" }
+
+posttag_new:
+    pattern:  /new
+    defaults: { _controller: "gseBlogBundle:PostTag:new" }
+
+posttag_create:
+    pattern:  /create
+    defaults: { _controller: "gseBlogBundle:PostTag:create" }
+    requirements: { _method: post }
+
+posttag_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "gseBlogBundle:PostTag:edit" }
+
+posttag_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "gseBlogBundle:PostTag:update" }
+    requirements: { _method: post|put }
+
+posttag_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "gseBlogBundle:PostTag:delete" }
+    requirements: { _method: post|delete }

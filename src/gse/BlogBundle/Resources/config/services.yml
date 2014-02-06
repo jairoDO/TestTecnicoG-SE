@@ -1,0 +1,7 @@
+parameters:
+#    gse_blog.example.class: gse\BlogBundle\Example
+
+services:
+#    gse_blog.example:
+#        class: %gse_blog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

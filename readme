@@ -1,0 +1,23 @@
+La prueba consiste en crear un bundle de symfony2 para el manejo de un Blog sensillo. El bundle contará con dos Entidades:
+
+Tag:
+- id
+- nombre
+
+Post:
+- id
+- titulo *
+- cuerpo *
+- tags **
+- imagen
+
+* Valores requeridos para validar la entidad
+** Un Post puede tener varios Tags asociados, y debe tener al menos un Tag asocciado
+
+- Al crearse una nueva entrada en el blog el sistema, deberá avisar, con un correo electrónico, a un administrador del blog que se ha creado una nueva entrada, enviando la url para poder visualizarlo. el email del administrador debé estar configurado como un parámatro de configuración del bundle o aplicación.
+
+- Las entradas deben poderse editar y eliminar.
+
+- El código de la prueba deberá ser alojado en algún repositorio GIT de donde poder clonarse. La dirección del repositorio deberá enviarse por correo electrónico a : gustavoburgi@g-se.com
+
+Nota: el frontend en esta prueba no es importante, aunque se valorará si el candidato es capaz de utilizar algún framework como Twitter bootstrap, algo propio, o si demuestra , de alguna forma, capacidades en dicha área,

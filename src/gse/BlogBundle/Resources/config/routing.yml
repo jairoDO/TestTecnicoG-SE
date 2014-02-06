@@ -1,0 +1,19 @@
+gse_blog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: gseBlogBundle:Default:index }
+
+gseBlogBundle_post:
+        resource: "@gseBlogBundle/Resources/config/routing/post.yml"
+        prefix:   /admin/post
+
+gseBlogBundle_tag:
+        resource: "@gseBlogBundle/Resources/config/routing/tag.yml"
+        prefix:   /admin/tag
+
+gseBlogBundle_post_gse:
+        resource: "@gseBlogBundle/Resources/config/routing/gse.yml"
+        prefix:   /gse
+
+gseBlogBundle_post_tag:
+        resource: "@gseBlogBundle/Resources/config/routing/post_tag.yml"
+        prefix:   /post_tag
