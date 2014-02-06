@@ -7,13 +7,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Kitpages\DataGridBundle\Model\GridConfig;
 use Kitpages\DataGridBundle\Model\Field;
+use Symfony\Component\HttpFoundation\Request;
+use gse\BlogBundle\Form\PostExtType;
 
 class PostGSEController extends Controller
 {	
-	/**
-	 * @Method("GET")
-     * @Template()
-     */
+
 	public function indexAction()
 	{
 		 $data = array();
@@ -33,11 +32,16 @@ class PostGSEController extends Controller
          }
 
 		$em = $this->getDoctrine()->getManager();
-		$mi_query = $em->getRepository('gseBlogBundle:PostTag')->findAll();
+		$posts = $em->getRepository('gseBlogBundle:Post')->findAll();
+
+        foreach($posts as $post)
+        {
+            echo(count($post->getTags()));
+        }
 	    // Añadimos el paginador (En este caso el parámetro "1" es la página actual, y parámetro "10" es el número de páginas a mostrar)
 		$paginator  = $this->get('knp_paginator');
 		$pagination = $paginator->paginate(
-			$mi_query,
+			$posts,
 	    	$this->get('request')->query->get('page', 1),5
 	    	);
 
@@ -45,16 +49,51 @@ class PostGSEController extends Controller
 		return $this->render('gseBlogBundle:PostGSE:postgse.html.twig', array('pagination' => $pagination,'form'=>$form->createView()));
 	}
 
-	/**
-    * Creates a form to create a Post entity.
-    *
-    * @param Post $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    **/
-    private function createForm(Post $entity)
+    public function newAction()
     {
-        $form = $this->createForm(new PostType(), $entity, array(
+
+        $form   = $this->createCreateForm();
+
+        return array(
+            'form'   => $form->createView(),
+        );
+    }
+
+    /**
+     * Creates a form to create a Tag entity.
+     *
+     *
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createCreateForm()
+    {
+        $form = $this->createForm(new PostExtType(), array(
+            'action' => $this->generateUrl('gse_create'),
+            'method' => 'POST',
+        ));
+
+        $form->add('submit', 'submit', array('label' => 'Create'));
+
+        return $form;
+    }
+    /**
+     * Creates a form to create a Post entity.
+     * * @Method("POST")
+     */
+    public function createAction(Request $request)
+    {
+        if ($request->isMethod('POST')) {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+                // realiza alguna acción, tal como guardar la tarea en la base de datos
+
+                return $this->redirect($this->generateUrl('task_success'));
+            }
+        }
+
+        $form = $this->createForm(new PostType(), array(
             'action' => $this->generateUrl('post_create'),
             'method' => 'POST',
         ));
@@ -64,49 +103,5 @@ class PostGSEController extends Controller
         return $form;
     }
 
-	/**
-    * Creates a form to create a Post entity.
-    *
-    * @param Post $entity The entity
-    *
-    * @return \Symfony\Component\Form\Form The form
-    **/
-
-    public function newAction()
-    {
-        $entity = new PostExType();
-        $form   = $this->createCreateForm($entity);
-
-        return array('form'=>form);
-    }
-
-
-	public function listarAction()
-	{
-		 // create query builder
-        $em = $this->get('doctrine')->getEntityManager();
-        $queryBuilder = $em->createQuery( 'select
-                                            p
-                                        from 
-                                            gseBlogBundle:Post as p 
-                                         where 1');
-            
-        #var_dump($queryBuilder);
-        $gridConfig = new GridConfig();
-        $gridConfig          ->setCountFieldName("id")
-            ->addField(new Field('titulo', array('label' => 'title', 'filterable' => true)))
-            ->addField(new Field('cuerpo', array('filterable' => true)));
-            //->addField(new Field('tag_id.nombre', array('filterable' => true)));
-            //->addField(new Field('employee.lastname', array('filterable' => true)))
-            //->addField(new Field('employee.email', array('filterable' => true)))
-        //;
-         echo("aca no paso nada");
-        $gridManager = $this->get('kitpages_data_grid.manager');
-        $grid = $gridManager->getGrid($queryBuilder, $gridConfig, $this->getRequest());
-
-        return $this->render('KitappMissionBundle:Admin:list.html.twig', array(
-            'grid' => $grid
-        ));
-	}
 }
 ?> 

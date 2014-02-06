@@ -283,6 +283,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostGSEController::newAction',  '_route' => 'gse_new',);
             }
 
+            // gse_create
+            if ($pathinfo === '/gse/create') {
+                return array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostGSEController::createAction',  '_route' => 'gse_create',);
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/post_tag')) {

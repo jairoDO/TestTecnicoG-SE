@@ -29,12 +29,7 @@ class Tag
      */
     private $nombre;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="gse\BlogBundle\Entity\Post", inversedBy="tags")
-     * @ORM\JoinColumn(name="post_id", referencedColumnName="id")
-     */
-    protected $post;
-
+     
     /**
      * Get id
      *
@@ -71,5 +66,28 @@ class Tag
     
     public function __toString() {
         return $this->getNombre();
+    }
+
+    /**
+     * Set post
+     *
+     * @param \gse\BlogBundle\Entity\Post $post
+     * @return Tag
+     */
+    public function setPost(\gse\BlogBundle\Entity\Post $post = null)
+    {
+        $this->post = $post;
+
+        return $this;
+    }
+
+    /**
+     * Get post
+     *
+     * @return \gse\BlogBundle\Entity\Post 
+     */
+    public function getPost()
+    {
+        return $this->post;
     }
 }

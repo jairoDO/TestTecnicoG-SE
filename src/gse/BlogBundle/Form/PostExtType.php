@@ -2,12 +2,12 @@
 
 namespace gse\BlogBundle\Form;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use gse\BlogBundle\Entity\Post;
-
+use gse\BlogBundle\Form\PostType;
+use gse\BlogBundle\Form\PosExtType;
+use gse\BlogBundle\Form\TagType;
 
 class PostExtType extends AbstractType
 {
@@ -17,18 +17,20 @@ class PostExtType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $post = new Post();
+        $post = new PostType();
         $builder
-            ->add($post)
-            ->add('tags', 'collection', array(
+            ->add(
+                'tags', 'collection', array(
                     // each item in the array will be an "email" field
-                    'type'   => new Type\TagType(),
+                    'type'   => new TagType(),
                     // these options are passed to each "email" type
                     'options'  => array(
                         'required'  => false,
-                        'attr'      => array('class' => 'email-box')
-                    ),
-        ;
+                        'attr'      => array('class' => 'tag')
+                       )
+                )
+            );
+            //->add($builder->create($post));
     }
     
     /**

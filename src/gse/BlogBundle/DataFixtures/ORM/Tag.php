@@ -1,7 +1,7 @@
 <?php
 namespace  gse\BlogBundle\DataFixtures\ORM;
 
-use Doctrine\Common\DataFixtures\FixtureInterface;
+
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -14,8 +14,7 @@ class LoadTagData extends AbstractFixture implements OrderedFixtureInterface
         for ($i=0; $i<51; $i++) {
             $tag = new Tag();
             $tag->setNombre('tag '.$i);
-            $manager->persist($tag);     
-            $this->addReference("tag$i",$tag);
+            $manager->persist($tag);
         }
         $manager->flush();
 

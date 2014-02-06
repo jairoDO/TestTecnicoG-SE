@@ -2,7 +2,7 @@
 
 namespace  gse\BlogBundle\DataFixtures\ORM;
 
-use Doctrine\Common\DataFixtures\FixtureInterface;
+
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -46,7 +46,8 @@ class LoadPostData extends AbstractFixture implements OrderedFixtureInterface
             $post->setCuerpo("El cuerpo de un post de prueba, para poder experimentar");
             $post->setUrlImg($array_img_url[$i]);
             $manager->persist($post);
-            $this->addReference("post$i", $post);
+
+
         }
         $manager->flush();
 

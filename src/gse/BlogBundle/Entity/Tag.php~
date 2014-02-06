@@ -29,7 +29,7 @@ class Tag
      */
     private $nombre;
 
-
+     
     /**
      * Get id
      *
@@ -61,5 +61,33 @@ class Tag
     public function getNombre()
     {
         return $this->nombre;
+    }
+
+    
+    public function __toString() {
+        return $this->getNombre();
+    }
+
+    /**
+     * Set post
+     *
+     * @param \gse\BlogBundle\Entity\Post $post
+     * @return Tag
+     */
+    public function setPost(\gse\BlogBundle\Entity\Post $post = null)
+    {
+        $this->post = $post;
+
+        return $this;
+    }
+
+    /**
+     * Get post
+     *
+     * @return \gse\BlogBundle\Entity\Post 
+     */
+    public function getPost()
+    {
+        return $this->post;
     }
 }

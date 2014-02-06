@@ -10,10 +10,12 @@
 </tr>
 
 {# table body #}
-{% for article in pagination %}
+{% for post in pagination %}
 <tr {% if loop.index is odd %}class="color"{% endif %}>
-    <td>{{ article.post.titulo }}</td>
-    <td>{{ article.tag.nombre }}</td>
+    <td>{{ post.titulo }}</td>
+   {% for tag in post.tags %}
+        <td> {{ tag.nombre }}ggf</td>
+    {% endfor %}
 </tr>
 {% endfor %}
 </table>

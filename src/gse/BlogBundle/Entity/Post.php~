@@ -4,6 +4,7 @@ namespace gse\BlogBundle\Entity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
  * Post
  *
@@ -12,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Post
 {
-    /**
+/**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer", nullable=false)
@@ -45,15 +46,15 @@ class Post
     private $urlImg;
 
 
-    /**
-     * @var \Tag
-     *
-     * @ORM\ManyToOne(targetEntity="Tag")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="tag_ids", referencedColumnName="id")
-     * })
-     */
-    private $tag_ids;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="gse\BlogBundle\Entity\Tag")
+     * @ORM\JoinTable(name="post_tag",
+     *      joinColumns={@ORM\JoinColumn(name="post_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="tag_id", referencedColumnName="id")}
+     *      )
+     * @Assert\Valid()
+     */
+    protected $tags;
 
 }

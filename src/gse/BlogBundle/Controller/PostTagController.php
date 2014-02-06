@@ -30,7 +30,6 @@ class PostTagController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $entities = $em->getRepository('gseBlogBundle:PostTag')->findAll();
-
         return array(
             'entities' => $entities,
         );

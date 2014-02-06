@@ -4,6 +4,7 @@ namespace gse\BlogBundle\Entity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
  * Post
  *
@@ -12,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Post
 {
-    /**
+/**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer", nullable=false)
@@ -45,22 +46,24 @@ class Post
     private $urlImg;
 
 
-    /**
-     * @var \Tag
-     *
-     * @ORM\ManyToOne(targetEntity="Tag")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="tag_ids", referencedColumnName="id")
-     * })
-     */
-    private $tag_ids;
 
     /**
-     * @ORM\OneToMany(targetEntity="gse\BlogBundle\Entity\tag", mappedBy="postr", cascade={"persist", "remove"})
+     * @ORM\ManyToMany(targetEntity="gse\BlogBundle\Entity\Tag")
+     * @ORM\JoinTable(name="post_tag",
+     *      joinColumns={@ORM\JoinColumn(name="post_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="tag_id", referencedColumnName="id")}
+     *      )
      * @Assert\Valid()
      */
     protected $tags;
 
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -70,10 +73,6 @@ class Post
     public function getId()
     {
         return $this->id;
-    }
-
-    public function __toString() {
-        return $this->getTitulo();
     }
 
     /**
@@ -146,46 +145,35 @@ class Post
     }
 
     /**
-     * Set tag_ids
+     * Add tags
      *
-     * @param \gse\BlogBundle\Entity\Tag $tagIds
+     * @param \gse\BlogBundle\Entity\Tag $tags
      * @return Post
      */
-    public function setTagIds(\gse\BlogBundle\Entity\Tag $tagIds = null)
+    public function addTag(\gse\BlogBundle\Entity\Tag $tags)
     {
-        $this->tag_ids = $tagIds;
+        $this->tags[] = $tags;
 
         return $this;
     }
 
     /**
-     * Get tag_ids
+     * Remove tags
      *
-     * @return \gse\BlogBundle\Entity\Tag 
+     * @param \gse\BlogBundle\Entity\Tag $tags
      */
-    public function getTagIds()
+    public function removeTag(\gse\BlogBundle\Entity\Tag $tags)
     {
-        return $this->tag_ids;
+        $this->tags->removeElement($tags);
     }
 
-    public function removeTag(Tag $tag)
-    {
-        $this->tags->removeElement($tag);
-    }
-
-        /**
-     * Constructor
+    /**
+     * Get tags
+     *
+     * @return \Doctrine\Common\Collections\Collection 
      */
-    public function __construct()
+    public function getTags()
     {
-        $this->tags = new \Doctrine\Common\Collections\ArrayCollection();
-    }
- 
-    public function setTags(\Doctrine\Common\Collections\Collection $tags)
-    {
-        $this->tags = $tags;
-        foreach ($tags as $tag) {
-            $address->setUser($this);
-        }
+        return $this->tags;
     }
 }

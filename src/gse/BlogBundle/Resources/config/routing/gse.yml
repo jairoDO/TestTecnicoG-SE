@@ -10,3 +10,11 @@ gse_listar:
 gse_new:
     pattern:  /new
     defaults: { _controller: "gseBlogBundle:PostGSE:new" }
+
+gse_create:
+    pattern:  /create
+    defaults: { _controller: "gseBlogBundle:PostGSE:create" }
+
+gse_new:
+    pattern:  /new
+    defaults: { _controller: "gseBlogBundle:PostGSE:new" }
