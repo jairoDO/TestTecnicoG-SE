@@ -12,4 +12,39 @@ use Doctrine\ORM\EntityRepository;
  */
 class PostRepository extends EntityRepository
 {
+    public function findWithfilter($data=null)
+    {
+        $titulo = isset($data['titulo']) ? "p.titullo  like %".$data['titulo']."% and ": "";
+        $cuerpo = isset($data['cuerpo']) ? "p.cuerpo  like %".$data['cuerpo']."% and": "";
+        if (isset($data['tag']) && count($data['tag']) > 0)
+        {
+            $tags = "t.id in (";
+            $tag_id = array();
+            foreach($data['tag'] as $tag)
+            {
+                $tag_id[] = $tag->getId();
+            }
+            $tags.=join(",",$tag_id).")";
+        }
+        else
+        {
+            $tags = "p.id=p.id";
+            $tags = "p.id=p.id";
+        }
+        $em = $this->getEntityManager();
+        $query = $em->createQuery(
+            "select
+                p
+            from
+                gseBlogBundle:Post as p
+                join p.tags t
+            where
+               $titulo
+               $cuerpo
+               $tags
+                "
+        )->getResult();
+
+        return $query;
+    }
 }

@@ -4,11 +4,7 @@
 </div>
 <table>
 <tr>
-{# sorting of properties based on query components #}
-    <th>{{ knp_pagination_sortable(pagination, 'Id', 'a.id') }}</th>
-    <th{% if pagination.isSorted('a.Title') %} class="sorted"{% endif %}>{{ knp_pagination_sortable(pagination, 'Title', 'a.title') }}</th>
-</tr>
-
+{{ form(form) }}
 {# table body #}
 {% for post in pagination %}
 <tr {% if loop.index is odd %}class="color"{% endif %}>

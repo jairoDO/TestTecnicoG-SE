@@ -52,6 +52,19 @@ class PostController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
+            $message = \Swift_Message::newInstance()
+                ->setSubject('te mando un mail')
+                ->setFrom('jairo222@gmail.com')
+                ->setTo('jairo222@gmail.com')
+                ->setBody(
+                    $this->renderView(
+                        'gseBlogBundle:PostGSE:email.txt.twig',
+                        array('name' => "prueba")
+                    )
+                )
+            ;
+            $this->get('mailer')->send($message);
+
 
             return $this->redirect($this->generateUrl('post_show', array('id' => $entity->getId())));
         }

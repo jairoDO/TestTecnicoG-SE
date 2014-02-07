@@ -54,6 +54,10 @@ class Post
      *      inverseJoinColumns={@ORM\JoinColumn(name="tag_id", referencedColumnName="id")}
      *      )
      * @Assert\Valid()
+     * @Assert\Count(
+     *      min = "1",
+     *      minMessage = "Debes especificar al menos un tag"
+     * )
      */
     protected $tags;
 
@@ -138,6 +142,26 @@ class Post
      * Get urlImg
      *
      * @return string 
+     */
+    public function getImagen()
+    {
+        return $this->urlImg;
+    }
+    public function setImagen($urlImg)
+    {
+        $this->urlImg = $urlImg;
+
+        return $this;
+    }
+
+    public  function  hasImagen()
+    {
+        return $this->hasUrlImg();
+    }
+    /**
+     * Get urlImg
+     *
+     * @return string
      */
     public function getUrlImg()
     {

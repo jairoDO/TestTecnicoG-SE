@@ -8,8 +8,8 @@ parameters:
     database_password: root
     mailer_transport: smtp
     mailer_host: 127.0.0.1
-    mailer_user: null
-    mailer_password: null
+    mailer_user: jairo222@gmail.com
+    mailer_password: j41r00r2
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
 
