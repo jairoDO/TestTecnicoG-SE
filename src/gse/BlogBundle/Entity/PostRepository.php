@@ -14,8 +14,8 @@ class PostRepository extends EntityRepository
 {
     public function findWithfilter($data=null)
     {
-        $titulo = isset($data['titulo']) ? "p.titullo  like %".$data['titulo']."% and ": "";
-        $cuerpo = isset($data['cuerpo']) ? "p.cuerpo  like %".$data['cuerpo']."% and": "";
+        $titulo = isset($data['titulo']) ? "p.titulo  like '%".$data['titulo']."%' and ": "";
+        $cuerpo = isset($data['cuerpo']) ? "p.cuerpo  like '%".$data['cuerpo']."%' and": "";
         if (isset($data['tag']) && count($data['tag']) > 0)
         {
             $tags = "t.id in (";

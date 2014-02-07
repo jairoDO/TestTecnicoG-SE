@@ -52,6 +52,16 @@ class PostGSEController extends Controller
 		return $this->render('gseBlogBundle:PostGSE:postgse.html.twig', array('pagination' => $pagination,'form'=>$form->createView()));
 	}
 
+    public function showAction($id)
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $post = $em->getRepository('gseBlogBundle:Post')->find($id);
+
+
+
+        return $this->render('gseBlogBundle:PostGSE:show.html.twig', array('post'=>$post));
+    }
 
 
 }

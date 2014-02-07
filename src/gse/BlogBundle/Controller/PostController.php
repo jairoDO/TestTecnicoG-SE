@@ -52,6 +52,7 @@ class PostController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($entity);
             $em->flush();
+
             $message = \Swift_Message::newInstance()
                 ->setSubject('te mando un mail')
                 ->setFrom('jairo222@gmail.com')
@@ -59,7 +60,7 @@ class PostController extends Controller
                 ->setBody(
                     $this->renderView(
                         'gseBlogBundle:PostGSE:email.txt.twig',
-                        array('name' => "prueba")
+                        array('url' => $this->get('router')->generate('gse_show', array('id' => 'nuestro_sitio.com'.$entity->getId())))
                     )
                 )
             ;

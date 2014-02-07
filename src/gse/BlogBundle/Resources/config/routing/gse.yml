@@ -18,3 +18,7 @@ gse_create:
 gse_new:
     pattern:  /new
     defaults: { _controller: "gseBlogBundle:PostGSE:new" }
+
+gse_show:
+    pattern: /{id}/show
+    defaults: { _controller: "gseBlogBundle:PostGSE:show" }

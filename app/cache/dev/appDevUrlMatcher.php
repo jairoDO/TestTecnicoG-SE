@@ -288,6 +288,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostGSEController::createAction',  '_route' => 'gse_create',);
             }
 
+            // gse_show
+            if (preg_match('#^/gse/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'gse_show')), array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostGSEController::showAction',));
+            }
+
         }
 
         if (0 === strpos($pathinfo, '/post_tag')) {

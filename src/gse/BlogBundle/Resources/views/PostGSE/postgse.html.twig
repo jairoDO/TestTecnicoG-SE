@@ -6,12 +6,20 @@
 <tr>
 {{ form(form) }}
 {# table body #}
+    <tr>
+        <th> post titulo </th>
+        <th> tags asociados</th>
+    <tr>
 {% for post in pagination %}
+
 <tr {% if loop.index is odd %}class="color"{% endif %}>
     <td>{{ post.titulo }}</td>
-   {% for tag in post.tags %}
-        <td> {{ tag.nombre }}ggf</td>
-    {% endfor %}
+    <td >
+        {% for tag in post.tags %}
+            {{ tag.nombre }} <b>|</b>
+        {% endfor %}
+
+    </td>
 </tr>
 {% endfor %}
 </table>
