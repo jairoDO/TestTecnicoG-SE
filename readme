@@ -21,3 +21,20 @@ Post:
 - El código de la prueba deberá ser alojado en algún repositorio GIT de donde poder clonarse. La dirección del repositorio deberá enviarse por correo electrónico a : gustavoburgi@g-se.com
 
 Nota: el frontend en esta prueba no es importante, aunque se valorará si el candidato es capaz de utilizar algún framework como Twitter bootstrap, algo propio, o si demuestra , de alguna forma, capacidades en dicha área,
+
+resuelto:
+
+la aplicacion tiene una entidad post y otra llamada tag, de relacion es  una a  mucha
+
+en el archivo
+config/segcurity  se encuentra el archivo de configuracion en este caso es user admin passw: kitten
+en el archivo config/config_dev.yml se encuentra la direccion de mail que esta usando
+
+las direcciones son;
+dominio/app_dev.php/gse  lista los post que hay  cualquiera lo puede ver
+dominio/app_dev.php/gse/show muestra un post
+dominio/app_dev.php/admin/Post para administrar los post solo admin
+dominio/app_dev.php/admin/Tag para administrar los Tags solo admin
+
+
+a la pagina le falto por completo el css 

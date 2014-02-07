@@ -5,8 +5,62 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <style>
+            body{
+                background-color:#999;
+                margin:0px;
+                padding:0px;
+                font-family: Verdana, Arial, sans-serif;
+                font-size: 12px;
+            }
+            a{
+                text-decoration:none;
+            }
+            #navlist {
+                float: left;
+                width: 170px;
+                margin-top: 30px;
+                margin-left: 5px;
+            }
+            #navlist ul {
+                list-style: none;
+            }
+
+            #navlist li a{
+                display: block;
+                height: 25px;
+                width: 100px;
+                padding: 9px;
+                margin: 5px;
+                background: inherit;
+                border-right: 4px solid #444;
+                color: #999;
+                text-transform: lowercase;
+                font-size: 0.9em;
+            }
+
+            #navlist li a:hover {
+                color: #f4f4f4;
+                background: #333;
+                border-right: 4px solid #98cb00;
+            }
+
+            #navlist li .active {
+                color: #999;
+                background: #333;
+                border-right: 4px solid #444;
+            }
+          </style>
     </head>
     <body>
+    <div id="navlist">
+        <ul>
+            <li><a href="{{ url('post_new') }}">Crear Un Post</a></li>
+            <li><a href="{{ url('gse') }}" class="active">Posts</a></li>
+            <li><a href="{{ url('tag') }}">Administrar los Tags</a></li>
+            <li><a href="{{ url('post') }}">Administrar los post</a></li>
+        </ul>
+    </div>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

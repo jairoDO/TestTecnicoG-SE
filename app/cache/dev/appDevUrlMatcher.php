@@ -302,17 +302,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return $this->redirect($pathinfo.'/', 'posttag');
                 }
 
-                return array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::indexAction',  '_route' => 'posttag',);
+                return array (  '_controller' => 'gseBlogBundle:PostTag:index',  '_route' => 'posttag',);
             }
 
             // posttag_show
             if (preg_match('#^/post_tag/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_show')), array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::showAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_show')), array (  '_controller' => 'gseBlogBundle:PostTag:show',));
             }
 
             // posttag_new
             if ($pathinfo === '/post_tag/new') {
-                return array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::newAction',  '_route' => 'posttag_new',);
+                return array (  '_controller' => 'gseBlogBundle:PostTag:new',  '_route' => 'posttag_new',);
             }
 
             // posttag_create
@@ -322,13 +322,13 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     goto not_posttag_create;
                 }
 
-                return array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::createAction',  '_route' => 'posttag_create',);
+                return array (  '_controller' => 'gseBlogBundle:PostTag:create',  '_route' => 'posttag_create',);
             }
             not_posttag_create:
 
             // posttag_edit
             if (preg_match('#^/post_tag/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_edit')), array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::editAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_edit')), array (  '_controller' => 'gseBlogBundle:PostTag:edit',));
             }
 
             // posttag_update
@@ -338,7 +338,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     goto not_posttag_update;
                 }
 
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_update')), array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::updateAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_update')), array (  '_controller' => 'gseBlogBundle:PostTag:update',));
             }
             not_posttag_update:
 
@@ -349,7 +349,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     goto not_posttag_delete;
                 }
 
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_delete')), array (  '_controller' => 'gse\\BlogBundle\\Controller\\PostTagController::deleteAction',));
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'posttag_delete')), array (  '_controller' => 'gseBlogBundle:PostTag:delete',));
             }
             not_posttag_delete:
 

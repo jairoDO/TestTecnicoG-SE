@@ -1,4 +1,6 @@
-{# total items count #}
+{% extends '::base.html.twig' %}
+
+{% block body %}
 <div class="count">
     {{ pagination.getTotalItemCount }}
 </div>
@@ -12,18 +14,26 @@
     <tr>
 {% for post in pagination %}
 
-<tr {% if loop.index is odd %}class="color"{% endif %}>
-    <td>{{ post.titulo }}</td>
+<tr {% if loop.index is odd %}class="color"{% endif %} >
+
+        <td>{{ post.titulo }}</td>
+
     <td >
         {% for tag in post.tags %}
             {{ tag.nombre }} <b>|</b>
         {% endfor %}
+        <a href="{{ url('gse_show',{'id': post.id}) }}">
+            ver
+        </a>
 
     </td>
 </tr>
+
 {% endfor %}
 </table>
 {# display navigation #}
 <div class="navigation">
     {{ knp_pagination_render(pagination) }}
 </div>
+
+{% endblock %}
